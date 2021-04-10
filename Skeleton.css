@@ -1,0 +1,22 @@
+@keyframes pulse {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  100% {
+    background-position: -135% 0%;
+  }
+}
+
+.skeleton {
+  display: inline-block;
+  height: 100%;
+  min-height: 20px;
+  width: 100%;
+  line-height: 1;
+  background: linear-gradient(-90deg, #F0F0F0 0%, #F8F8F8 50%, #F0F0F0 100%);
+  background-size: 400% 400%;
+  animation: pulse 1.2s ease-in-out infinite;
+  -webkit-animation: pulse 1.2s ease-in-out infinite;
+  overflow: hidden;
+}
